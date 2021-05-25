@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Multiplication Table</title>
+<script>
+function multiply(){
+    a = eval(prompt("Enter any Value that you want to multiply!"))
+    document.write("<h1 style='text-align:center'>Multiplication Table </h1>")
+    for ( i=1;i<=10;i++){
+        document.write("<table border= 1><tr><td bgcolor=red>"+a+"</td><td bgcolor=blue>*</td><td bgcolor=green>"+i+"</td><td bgcolor=skyblue>=</td><td bgcolor=yellow>"+a*i+"</td></tr>")
+    }
+}
+</script>
+</head>
+<body>
+   <input type = "button" value = "Multplication" onclick="multiply()"/> 
+</body>
+</html>

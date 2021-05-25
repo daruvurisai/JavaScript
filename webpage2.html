@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+Dynamic Values for text box
+</title>
+<script>
+var i =1;//Decalring Global value
+ function addtextbox(){
+     i++;//Incrementing global value everytime a function is called
+     a=document.getElementById("textboxinput");
+    //Logic for dynamic creation
+     b=document.createElement("input");
+     b.setAttribute("type","text");
+     b.setAttribute("value","Dynamic Text Box");
+     b.setAttribute("id",'A'+i);//Declaring our id value as A2 , A3 ,A4
+     a.appendChild(b);//Adding it to textboxinput field present in body tag.
+ }
+</script>
+</head>
+
+<body>
+<div id="textboxinput"></div><br>
+<input type="button" value="Add Text Box" onClick="addtextbox()"/>
+
+</body>
+
+</html>
